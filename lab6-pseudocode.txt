@@ -1,0 +1,45 @@
+CMP102 - Week 6 Lab - Ekku Jokinen - 1703641
+
+EXERCISE 1:
+-----------
+loop main menu until user quits
+show ferry space available on the top right
+	add vehicle
+		if capacity NOT full
+			show menu
+				show all vehicle types
+					user input for to select vehicle type
+					check if there is space on the ferry
+						if yes
+							create a pointer of selected type
+						if no
+							display error message
+		if capacity IS full
+			display error message
+	edit current load
+		display all loaded vehicles
+		users input to select a specific vehicle
+			change values
+				show old values
+				user input for new values or empty if they want to keep
+					update values
+			delete vehicle
+	print report
+		display list of vehicles with type, registeration number, length
+		ask if user wants to save report in a separate file
+			if yes
+				save report in a file
+			if no
+				go back to main menu
+	ferry properties
+		change ferry capacity
+			display current capacity
+			ask if user wants to change ferry capacity (Y/N)
+				if yes
+					user input new capacity
+						change capacity
+				if no
+					return to main menu
+		go back to main menu
+	reset ferry
+		delete every vehicle by destroying pointers
